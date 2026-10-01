@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum JavaScript DOM — Pengenalan DOM Interaktif</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER UTAMA -->
+      <header class="main-header">
+        <span class="badge">Tugas Promnet</span>
+        <h1 id="judul-utama">To-Do List Interaktif</h1>
+        <p id="sub-judul">Buat To-Do List Mu Disini</p>
+      </header>
+
+      <!-- GRID UTAMA PRAKTIKUM -->
+      <main class="grid-container">
+        <!-- AKTIVITAS 3 & 4: EVENT & MEMBUAT ELEMEN DINAMIS (BEKAL TO-DO LIST) -->
+        <section class="card" id="card-dinamis">
+          <h2>To-Do List Saya</h2>
+          <p class="desc">Tambahkan To-Do List kamu pada kolom di bawah ini</p>
+
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="input-tugas"
+              placeholder="Ketik di sini..."
+              autocomplete="off"
+            />
+            <button id="button-tambah" class="button button-success">+ Tambah</button>
+          </div>
+
+          <div class="list-container">
+            <ul id="daftar-tugas"></ul>
+            <div id="hasil-input">
+              <p>Total: <span id="total-tugas">0</span></p>
+              <p>Selesai: <span id="jumlah-selesai">0</span></p>
+              <p>Belum Selesai: <span id="jumlah-belum-selesai">0</span></p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p>&copy; 2026 Tugas JavaScript DOM — Rio Putra Hermawan</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
